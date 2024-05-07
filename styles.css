@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.input-group input[type="number"] {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.button-group {
+    display: flex;
+    margin-top: 10px;
+}
+
+.button-group button {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.input-group label {
+    display: inline-block;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.button-group button {
+    margin-right: 10px;
+}
+
+#result {
+    font-size: 20px;
+}
+
+footer p {
+    font-family: "Bariaki", sans-serif;
+    font-size: 20px;
+    color: #666;
+}
+
+@media screen and (max-width: 600px) {
+    #calculator {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .input-group,
+    .button-group {
+        width: 100%;
+    }
+
+    .input-group label {
+        margin-bottom: 5px;
+        font-size: 15px;
+        border-radius: 20px;
+    }
+
+    .input-group input[type="number"] {
+        font-size: 15px;
+    }
+
+    .button-group {
+        justify-content: space-between;
+        margin-top: 10px;
+        
+    }
+
+    #result {
+        font-size: 15px;
+    }
+
+    .button-group button {
+        width: 55%;
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #calculator {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .input-group,
+    .button-group {
+        width: 100%;
+    }
+
+    .input-group label {
+        margin-bottom: 10px;
+    }
+
+    .button-group {
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
